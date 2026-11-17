@@ -198,6 +198,12 @@ catalog:
       rules:
         - allow: [Template]
 
+    # ACME custom field + custom action. No GitHub token required.
+    - type: file
+      target: ../../catalog/templates/acme-service-stamp/template.yaml
+      rules:
+        - allow: [Template]
+
     # Local example organizational data
     - type: file
       target: ../../examples/org.yaml
